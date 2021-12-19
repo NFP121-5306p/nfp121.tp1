@@ -50,7 +50,7 @@ public class Picture {
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("blue");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
@@ -83,4 +83,17 @@ public class Picture {
         }
     }
 
+     public void coucher(int distance) {
+        
+
+        if (distance == 0) {
+           sun.makeInvisible();
+        } else {
+            sun.makeVisible();
+        }
+
+        
+    }
+    
+    
 }
